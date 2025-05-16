@@ -1,0 +1,20 @@
+def r_file(f_name):
+    try:
+        with open(f_name,'r' ) as file:
+            l_number=1
+            for line in file:
+              print("Line",l_number,":",line)
+              l_number +=1
+    except FileNotFoundError:
+        print(f_name, " was not found.")
+
+
+print("Reading file content:")
+r_file('sample.txt')        
+
+
+
+
+
+
+
